@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css linking  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- title  -->
+    <title>Test HUT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand"><img src="images/Tasty_HUT.png" alt="Testy hut logo"></a>
+                <form class="d-flex">
+                    <button class="btn btn-warning rounded fw-bold px-4 py-2" type="submit">Sign up</button>
+                </form>
+            </div>
+        </nav>
+        <!-- baner section  -->
+        <section>
+            <div class="baner-section">
+                <div class="banerBoxCover"></div>
+                <div class="baner-body text-center gap-5">
+                    <div class="d-flex flex-column mb-5 gap-3">
+                        <h1>Taste Our Delicious Best Foods</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humou.</p>
+                    </div>
+                    <div class="d-flex seachBox justify-content-center ">
+                        <input id="searchInput" class="searchInput border-0" type="text"
+                            placeholder="Search your favorite food">
+                        <a id="searchBtn" class="btn rounded-end btn-warning "> Search</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main  -->
+    <main class="mt-5">
+        <section class="my-5 container">
+            <h1 class="text-center"> Favourite Food</h1>
+            <div id="cardBox" class="row row-cols-1 row-cols-md-2 g-4 my-5">
+            </div>
+            <div class="d-flex align-items-center flex-column justify-content-center">
+                <div>
+                    <button id="seeMoreBtn" class="btn btn-warning d-block fw-bold text-light mb-3">See
+                        Mode</button>
+                    <span id="warningText" class="text-danger">No More Food list sorry *</span>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="d-flex justify-content-between p-3 mb-3">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modalBody" class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="Sections mb-5">
+            <div>
+                <h3>Sections</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Feature</li>
+                    <li>Pricing</li>
+                    <li>FAQ&A</li>
+                    <li>ABOUT</li>
+
+                </ul>
+            </div>
+            <div>
+                <h3>Sections</h3>
+                <ul>
+                    <li>UX/UI design</li>
+                    <li>Producr Designer</li>
+                    <li>Backend Developer</li>
+                    <li>Front-end Developer</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Suport</li>
+                    <li>Privecy Policy</li>
+                    <li>Turms Of survice</li>
+                </ul>
+            </div>
+        </div>
+        <div class=" SubscribeSec">
+            <h3 class="text-uppercase">Subscribe out newslater</h3>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vel similique tempora
+                consequatur!</p>
+            <div class="flex gao-3 justify-content-center">
+                <input type="text" class="py-1 px-2" placeholder="Enter your email">
+                <button class="btn btn-warning">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="js/app.js"></script>
+    <script src="js/EXTRA.js"></script>
+</body>
+
+</html>
